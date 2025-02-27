@@ -1,24 +1,28 @@
 import React from 'react';
 import { RiArrowDropDownLine } from "react-icons/ri";
 import { CiSearch } from "react-icons/ci";
+import Image from 'next/image';
 
 const HeroSection = () => {
     return (
-        <div className='mb-10'>
-            <div>
+        <div className='flex justify-between gap-3 relative'>
+            <div className='w-[55%] pt-24'>
                 <h1 className='text-[#030A1B] text-[61px] not-italic font-semibold leading-[120%]'>Find the perfect <br /> place to stay with <br /> your family</h1>
                 <p className='text-[#030A1B] text-[18px] not-italic font-medium leading-[27px] mt-7'>Buying a home is a life-changing experience, so shouldn’t <br /> your real estate agent be a life changer.</p>
+
                 <div className='mt-10'>
                     {/* tabs  */}
-                    <div className='shadow-2xl bg-white p-6 flex items-center gap-11 w-64 drop-shadow-[0px_10px_100px_rgba(0,0,0,0.10)] h-12'>
-                        <p className='text-lg font-medium hover:font-semibold hover:text-[#FE753F] text-[#030A1B] cursor-pointer'>Buy</p>
+                    <div className='bg-white p-6 flex items-center gap-11 w-64 h-12 shadow-2xl'>
+                        <p className='text-lg font-medium hover:font-semibold hover:text-[#FE753F] text-[#FE753F] cursor-pointer'>Buy</p>
                         <p className='text-lg font-medium hover:font-semibold hover:text-[#FE753F] text-[#030A1B] cursor-pointer'>Rent</p>
                         <p className='text-lg font-medium hover:font-semibold hover:text-[#FE753F] text-[#030A1B] cursor-pointer'>Sell</p>
                     </div>
+
+
                     {/* filter */}
-                    <div className='bg-white p-6 shadow-2xl flex items-center gap-10'>
+                    <div className='bg-white p-6  drop-shadow-[-10px_0px_50px_rgba(0,0,0,0.10)] flex items-center justify-between gap-16 absolute z-10 w-[67%]'>
                         {/* location  */}
-                        <div>
+                        <div className='border-r-2 pr-5 border-[#E6E7E9]'>
                             <div className='flex items-center gap-1'>
                                 <label htmlFor="location" className="text-[#030A1B] text-[16px] font-normal leading-normal">
                                     Location
@@ -37,11 +41,12 @@ const HeroSection = () => {
                                 <option value="Khulna">Khulna</option>
                             </select>
                         </div>
+
                         {/* Property type  */}
-                        <div>
+                        <div className='pr-10 border-r-2 border-[#E6E7E9]'>
                             <div className='flex items-center gap-1'>
-                                <label htmlFor="Property type" className="text-[#030A1B] text-[16px] font-normal leading-normal">
-                                Property type
+                                <label htmlFor="Property type" className="text-[#030A1B] text-[16px] font-normal text-nowrap leading-normal">
+                                    Property type
                                 </label>
                                 <RiArrowDropDownLine className='text-2xl' />
                             </div>
@@ -61,7 +66,7 @@ const HeroSection = () => {
                         <div>
                             <div className='flex items-center gap-1'>
                                 <label htmlFor="Price" className="text-[#030A1B] text-[16px] font-normal leading-normal">
-                                Price
+                                    Price
                                 </label>
                                 <RiArrowDropDownLine className='text-2xl' />
                             </div>
@@ -77,11 +82,14 @@ const HeroSection = () => {
                         </div>
 
                         {/* search buttom  */}
-                        <button><CiSearch />Search</button>
+                        <button className='rounded-[10px] bg-[#2E6EFF] text-white text-[16px] font-medium leading-normal flex gap-1 items-center p-4'><CiSearch className='text-2xl font-bold' /><span>Search</span></button>
                     </div>
                 </div>
+
             </div>
-            <div></div>
+            <div className='w-[45%]'>
+                <Image src={'/images/hero.png'} height={100} width={650} alt='hero' />
+            </div>
         </div>
     );
 };
