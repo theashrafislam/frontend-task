@@ -27,7 +27,7 @@ const PopularProperties = () => {
             </div>
 
             {/* cards */}
-            <div className='grid grid-cols-1 lg:grid-cols-3 gap-[30px]'>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[30px]'>
                 {
                     data?.mainEntity.map((card, index) =>
                         <div key={index} className='rounded-[10px] bg-[#FFF] shadow-[0px_8px_70px_0px_rgba(0,0,0,0.07)]'>
