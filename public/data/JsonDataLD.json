@@ -1,0 +1,92 @@
+{
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Real Estate Listings",
+    "description": "A collection of premium real estate listings.",
+    "mainEntity": [
+        {
+            "@type": "Product",
+            "name": "Capital Hill Residence",
+            "image": "/images/card1.png",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "East London"
+            },
+            "numberOfBedrooms": 6,
+            "numberOfBathroomsTotal": 2,
+            "floorSize": "3",
+            "price": "$5527.00",
+            "favorite": true
+        },
+        {
+            "@type": "Product",
+            "name": "Picket Fence Realty",
+            "image": "/images/card2.png",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "East London"
+            },
+            "numberOfBedrooms": 6,
+            "numberOfBathroomsTotal": 2,
+            "floorSize": "3",
+            "price": "$6727.00",
+            "favorite": false
+        },
+        {
+            "@type": "Product",
+            "name": "Banyon Tree Realty",
+            "image": "/images/card3.png",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "East London"
+            },
+            "numberOfBedrooms": 6,
+            "numberOfBathroomsTotal": 2,
+            "floorSize": "3",
+            "price": "$4327.00",
+            "favorite": true
+        },
+        {
+            "@type": "Product",
+            "name": "Corsair Real Estate",
+            "image": "/images/card4.png",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "East London"
+            },
+            "numberOfBedrooms": 6,
+            "numberOfBathroomsTotal": 2,
+            "floorSize": "3",
+            "price": "$4427.00",
+            "favorite": false
+        },
+        {
+            "@type": "Product",
+            "name": "Sequoia Real Estate",
+            "image": "/images/card5.png",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "East London"
+            },
+            "numberOfBedrooms": 6,
+            "numberOfBathroomsTotal": 2,
+            "floorSize": "3",
+            "price": "$4527.00",
+            "favorite": false
+        },
+        {
+            "@type": "Product",
+            "name": "Strive Partners Realty",
+            "image": "/images/card6.png",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "East London"
+            },
+            "numberOfBedrooms": 6,
+            "numberOfBathroomsTotal": 2,
+            "floorSize": "3",
+            "price": "$5527.00",
+            "favorite": true
+        }
+    ]
+}
