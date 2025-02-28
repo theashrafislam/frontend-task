@@ -2,6 +2,7 @@ import HeroSection from "./Components/HeroSection";
 import Partners from "./Components/Partners";
 import PopularProperties from "./Components/PopularProperties";
 import PropertyFeatured from "./Components/PropertyFeatured";
+import Reviews from "./Components/Reviews";
 import Subscribe from "./Components/Subscribe";
 
 export default function Home() {
@@ -19,6 +20,7 @@ export default function Home() {
         <PropertyFeatured />
       </div>
       <div className="max-w-7xl mx-auto">
+        <Reviews />
         <Subscribe />
       </div>
     </div>
