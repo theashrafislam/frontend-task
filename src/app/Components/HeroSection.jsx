@@ -111,7 +111,7 @@ const HeroSection = () => {
                         </div>
 
                         {/* search buttom  */}
-                        <button className='rounded-[10px] w-full lg:w-0 justify-center bg-[#2E6EFF] text-white text-[16px] font-medium leading-normal flex gap-1 items-center p-4'><CiSearch className='text-2xl font-bold' /><span>Search</span></button>
+                        <button className='rounded-[10px] justify-center bg-[#2E6EFF] text-white text-[16px] font-medium leading-normal flex gap-1 items-center p-4'><CiSearch className='text-2xl font-bold' /><span>Search</span></button>
                     </div>}
                     {rent && <div className='bg-white p-6  drop-shadow-[-10px_0px_50px_rgba(0,0,0,0.10)] flex flex-col lg:flex-row items-center justify-between gap-16 lg:absolute z-10 w-full lg:w-[67%]'>
                         {/* location  */}
@@ -175,7 +175,7 @@ const HeroSection = () => {
                         </div>
 
                         {/* search buttom  */}
-                        <button className='rounded-[10px] w-full lg:w-0 justify-center bg-[#2E6EFF] text-white text-[16px] font-medium leading-normal flex gap-1 items-center p-4'><CiSearch className='text-2xl font-bold' /><span>Search</span></button>
+                        <button className='rounded-[10px] justify-center bg-[#2E6EFF] text-white text-[16px] font-medium leading-normal flex gap-1 items-center p-4'><CiSearch className='text-2xl font-bold' /><span>Search</span></button>
                     </div>}
                     {sell && <div className='bg-white p-6  drop-shadow-[-10px_0px_50px_rgba(0,0,0,0.10)] flex flex-col lg:flex-row items-center justify-between gap-16 lg:absolute z-10 w-full lg:w-[67%]'>
                         {/* location  */}
@@ -239,7 +239,7 @@ const HeroSection = () => {
                         </div>
 
                         {/* search buttom  */}
-                        <button className='rounded-[10px] w-full lg:w-0 justify-center bg-[#2E6EFF] text-white text-[16px] font-medium leading-normal flex gap-1 items-center p-4'><CiSearch className='text-2xl font-bold' /><span>Search</span></button>
+                        <button className='rounded-[10px] justify-center bg-[#2E6EFF] text-white text-[16px] font-medium leading-normal flex gap-1 items-center p-4'><CiSearch className='text-2xl font-bold' /><span>Search</span></button>
                     </div>}
                 </div>
 
