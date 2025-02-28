@@ -5,13 +5,13 @@ const PropertyFeatured = () => {
     return (
         <div className="bg-[#F9F9F9] py-[70px] overflow-hidden">
             <div className="max-w-7xl mx-auto px-4 mb-[70px]">
-                <h1 className="text-[#030A1B] text-[44px] font-semibold text-center mb-[10px]">Property Featured</h1>
+                <h1 className="text-[#030A1B] text-[30px] lg:text-[44px] font-semibold text-center mb-[10px]">Property Featured</h1>
                 <p className="text-[#030A1B] text-center text-[16px] font-normal opacity-70">Real estate is a crowded field. But with the number of buyers purchasing homes through <br /> real estate agents and brokers growing there’s plenty of </p>
             </div>
             {/* cards  */}
             <div className='max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-[30px] items-end'>
                 {/* 1st colum  */}
-                <div className='flex flex-col gap-[30px]'>
+                <div className='flex flex-col gap-[30px] mx-3 lg:mx-0'>
                     <div className='p-[25px] rounded-[10px] bg-white'>
                         <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 46 46" fillRule="none">
                             <rect opacity="0.1" width="46" height="46" rx="5" fillRule="#FE753F" />
@@ -44,11 +44,11 @@ const PropertyFeatured = () => {
                     </div>
                 </div>
                 {/* 2nd colum  */}
-                <div>
+                <div className='mx-3 lg:mx-0'>
                     <Image src={'/images/featured.png'} width={100} height={100} alt='featured' className='w-full' />
                 </div>
                 {/* 3rd colum  */}
-                <div className='flex flex-col gap-[30px]'>
+                <div className='flex flex-col gap-[30px] mx-3 lg:mx-0'>
                     <div className='p-[25px] rounded-[10px] bg-white'>
                         <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 46 46" fillRule="none">
                             <rect opacity="0.1" width="46" height="46" rx="5" fillRule="#FE753F" />

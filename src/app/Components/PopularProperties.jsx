@@ -20,14 +20,14 @@ const PopularProperties = () => {
     }
 
     return (
-        <div className='mb-36'>
+        <div className='mb-36 mx-3'>
             <div className='flex justify-between items-center mb-[70px]'>
-                <h1 className='text-[#030A1B] text-[44px] font-semibold leading-normal'>Popular Properties</h1>
-                <button className='text-[#FE753F]  text-[16px] font-semibold leading-normal'>View All</button>
+                <h1 className='text-[#030A1B] text-[28px] lg:text-[44px] font-semibold leading-normal'>Popular Properties</h1>
+                <button className='text-[#FE753F]  text-[16px] font-semibold leading-normal text-nowrap'>View All</button>
             </div>
 
             {/* cards */}
-            <div className='grid grid-cols-3 gap-[30px]'>
+            <div className='grid grid-cols-1 lg:grid-cols-3 gap-[30px]'>
                 {
                     data?.mainEntity.map((card, index) =>
                         <div key={index} className='rounded-[10px] bg-[#FFF] shadow-[0px_8px_70px_0px_rgba(0,0,0,0.07)]'>
@@ -42,7 +42,7 @@ const PopularProperties = () => {
                                 </div>
                                 <div className='flex items-center justify-between'>
                                     <p className='text-[#FE753F] text-[22px] font-semibold leading-normal'>{card?.price}</p>
-                                    <button className='px-[20px] py-[10px] rounded-[5px] bg-[#2E6EFF] text-white'>View Details</button>
+                                    <button className='px-[12px] lg:px-[20px] py-[10px] rounded-[5px] bg-[#2E6EFF] text-white'>View Details</button>
                                 </div>
                             </div>
                         </div>

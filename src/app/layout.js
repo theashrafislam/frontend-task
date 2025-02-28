@@ -36,7 +36,7 @@ export default function RootLayout({ children }) {
 
         {/* footer section  */}
         <footer className="max-w-7xl mx-auto">
-          {/* <Footer /> */}
+          <Footer />
         </footer>
 
       </body>

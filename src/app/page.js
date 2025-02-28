@@ -11,18 +11,18 @@ export default function Home() {
       {/* Constrained width sections */}
       <div className="max-w-7xl mx-auto">
         <HeroSection />
-        {/* <Partners />
-        <PopularProperties /> */}
+        <Partners />
+        <PopularProperties />
       </div>
 
       {/* Full width section */}
-      {/* <div className="w-full overflow-x-hidden">
+      <div className="w-full overflow-x-hidden">
         <PropertyFeatured />
       </div>
       <div className="max-w-7xl mx-auto">
         <Reviews />
         <Subscribe />
-      </div> */}
+      </div>
     </div>
   );
 }
