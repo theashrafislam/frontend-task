@@ -74,13 +74,13 @@ const HeroSection = () => {
                         {/* Property type  */}
                         <div className='pr-10 lg:border-r-2 border-[#E6E7E9]'>
                             <div className='flex items-center gap-1'>
-                                <label htmlFor="Property type" className="text-[#030A1B] text-[16px] font-normal text-nowrap leading-normal">
+                                <label htmlFor="Property-type" className="text-[#030A1B] text-[16px] font-normal text-nowrap leading-normal">
                                     Property type
                                 </label>
                                 <RiArrowDropDownLine className='text-2xl' />
                             </div>
                             <select
-                                id="Property type"
+                                id="Property-type"
                                 name="Propertytype"
                                 className="appearance-none mt-1 block w-full pl-1 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm rounded-md"
                             >
@@ -138,13 +138,13 @@ const HeroSection = () => {
                         {/* Property type  */}
                         <div className='pr-10 lg:border-r-2 border-[#E6E7E9]'>
                             <div className='flex items-center gap-1'>
-                                <label htmlFor="Property type" className="text-[#030A1B] text-[16px] font-normal text-nowrap leading-normal">
+                                <label htmlFor="Property-type" className="text-[#030A1B] text-[16px] font-normal text-nowrap leading-normal">
                                     Property type
                                 </label>
                                 <RiArrowDropDownLine className='text-2xl' />
                             </div>
                             <select
-                                id="Property type"
+                                id="Property-type"
                                 name="location"
                                 className="appearance-none mt-1 block w-full pl-1 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm rounded-md"
                             >
@@ -202,14 +202,14 @@ const HeroSection = () => {
                         {/* Property type  */}
                         <div className='pr-10 lg:border-r-2 border-[#E6E7E9]'>
                             <div className='flex items-center gap-1'>
-                                <label htmlFor="Property type" className="text-[#030A1B] text-[16px] font-normal text-nowrap leading-normal">
+                                <label htmlFor="Property-type" className="text-[#030A1B] text-[16px] font-normal text-nowrap leading-normal">
                                     Property type
                                 </label>
                                 <RiArrowDropDownLine className='text-2xl' />
                             </div>
                             <select
-                                id="Property type"
-                                name="Property type"
+                                id="Property-type"
+                                name="Property-type"
                                 className="appearance-none mt-1 block w-full pl-1 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm rounded-md"
                             >
                                 <option value="Duplex">Duplex</option>
