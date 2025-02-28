@@ -41,11 +41,11 @@ const HeroSection = () => {
 
                 <div className='mt-10'>
                     {/* tabs  */}
-                    <div className='bg-white p-6 flex items-center justify-center lg:justify-start gap-11 w-[100%] lg:w-64 h-12 shadow-2xl'>
+                    <ul className='bg-white p-6 flex items-center justify-center lg:justify-start gap-11 w-[100%] lg:w-64 h-12 shadow-2xl'>
                         <li onClick={() => handleTabs('buy')} className={`list-none text-lg font-medium hover:font-semibold hover:text-[#FE753F] ${buy && 'text-[#FE753F]'} cursor-pointer`}>Buy</li>
                         <li onClick={() => handleTabs('rent')} className={`list-none text-lg font-medium hover:font-semibold hover:text-[#FE753F] text-[#030A1B] ${rent && 'text-[#FE753F]'} cursor-pointer`}>Rent</li>
                         <li onClick={() => handleTabs('sell')} className={`list-none text-lg font-medium hover:font-semibold hover:text-[#FE753F] text-[#030A1B] ${sell && 'text-[#FE753F]'} cursor-pointer`}>Sell</li>
-                    </div>
+                    </ul>
 
 
                     {/* buy filter */}
@@ -80,8 +80,8 @@ const HeroSection = () => {
                                 <RiArrowDropDownLine className='text-2xl' />
                             </div>
                             <select
-                                id="location"
-                                name="location"
+                                id="Property type"
+                                name="Propertytype"
                                 className="appearance-none mt-1 block w-full pl-1 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm rounded-md"
                             >
                                 <option value="Duplex">Duplex</option>
@@ -94,14 +94,14 @@ const HeroSection = () => {
                         {/* Price  */}
                         <div>
                             <div className='flex items-center gap-1'>
-                                <label htmlFor="Price" className="text-[#030A1B] text-[16px] font-normal leading-normal">
+                                <label htmlFor="price" className="text-[#030A1B] text-[16px] font-normal leading-normal">
                                     Price
                                 </label>
                                 <RiArrowDropDownLine className='text-2xl' />
                             </div>
                             <select
-                                id="Price"
-                                name="Price"
+                                id="price"
+                                name="price"
                                 className="appearance-none mt-1 block w-full pl-1 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm rounded-md"
                             >
                                 <option value="$4000 - $8000">$4000 - $6000</option>
@@ -144,7 +144,7 @@ const HeroSection = () => {
                                 <RiArrowDropDownLine className='text-2xl' />
                             </div>
                             <select
-                                id="location"
+                                id="Property type"
                                 name="location"
                                 className="appearance-none mt-1 block w-full pl-1 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm rounded-md"
                             >
@@ -158,14 +158,14 @@ const HeroSection = () => {
                         {/* Price  */}
                         <div>
                             <div className='flex items-center gap-1'>
-                                <label htmlFor="Price" className="text-[#030A1B] text-[16px] font-normal leading-normal">
+                                <label htmlFor="price" className="text-[#030A1B] text-[16px] font-normal leading-normal">
                                     Price
                                 </label>
                                 <RiArrowDropDownLine className='text-2xl' />
                             </div>
                             <select
-                                id="Price"
-                                name="Price"
+                                id="price"
+                                name="price"
                                 className="appearance-none mt-1 block w-full pl-1 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm rounded-md"
                             >
                                 <option value="$4000 - $8000">$4000 - $6000</option>
@@ -208,8 +208,8 @@ const HeroSection = () => {
                                 <RiArrowDropDownLine className='text-2xl' />
                             </div>
                             <select
-                                id="location"
-                                name="location"
+                                id="Property type"
+                                name="Property type"
                                 className="appearance-none mt-1 block w-full pl-1 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm rounded-md"
                             >
                                 <option value="Duplex">Duplex</option>
@@ -222,13 +222,13 @@ const HeroSection = () => {
                         {/* Price  */}
                         <div>
                             <div className='flex items-center gap-1'>
-                                <label htmlFor="Price" className="text-[#030A1B] text-[16px] font-normal leading-normal">
+                                <label htmlFor="price" className="text-[#030A1B] text-[16px] font-normal leading-normal">
                                     Price
                                 </label>
                                 <RiArrowDropDownLine className='text-2xl' />
                             </div>
                             <select
-                                id="Price"
+                                id="price"
                                 name="Price"
                                 className="appearance-none mt-1 block w-full pl-1 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm rounded-md"
                             >

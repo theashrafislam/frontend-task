@@ -69,9 +69,9 @@ const Navbar = () => {
                             <li className='text-[#030A1B] text-base font-medium hover:font-semibold hover:text-[#FE753F] cursor-pointer'>
                                 Blog
                             </li>
-                            <button className='w-full px-[30px] py-[15px] font-medium text-base text-[#FFF] bg-[#2E6EFF] rounded'>
+                            <li className='w-full px-[30px] py-[15px] font-medium text-base text-[#FFF] bg-[#2E6EFF] rounded'>
                                 Contact us
-                            </button>
+                            </li>
                         </ul>
                     </div>
                 </div>
