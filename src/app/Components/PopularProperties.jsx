@@ -20,7 +20,7 @@ const PopularProperties = () => {
     }
 
     return (
-        <div className='mb-12'>
+        <div className='mb-36'>
             <div className='flex justify-between items-center mb-[70px]'>
                 <h1 className='text-[#030A1B] text-[44px] font-semibold leading-normal'>Popular Properties</h1>
                 <button className='text-[#FE753F]  text-[16px] font-semibold leading-normal'>View All</button>

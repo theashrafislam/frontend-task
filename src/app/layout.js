@@ -27,7 +27,9 @@ export default function RootLayout({ children }) {
         </header>
 
         {/* main section  */}
-        <main className="max-w-7xl mx-auto">
+        <main
+          // className="max-w-7xl mx-auto"
+        >
           {children}
         </main>
 
