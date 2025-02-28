@@ -120,14 +120,10 @@ const HeroSection = () => {
                         </div>
                     )}
                     {rent && <div className='bg-white p-6  drop-shadow-[-10px_0px_50px_rgba(0,0,0,0.10)] flex flex-col lg:flex-row items-center justify-between gap-16 lg:absolute z-10 w-full lg:w-[67%]'>
-                        <div className='bg-white p-6  drop-shadow-[-10px_0px_50px_rgba(0,0,0,0.10)] flex flex-col lg:flex-row items-center justify-between gap-16 lg:absolute z-10 w-full lg:w-[67%]'>
-                            <h1>Coming Soon</h1>
-                        </div>
+                        <h1 className='text-center text-2xl'>Coming Soon</h1>
                     </div>}
                     {sell && <div className='bg-white p-6  drop-shadow-[-10px_0px_50px_rgba(0,0,0,0.10)] flex flex-col lg:flex-row items-center justify-between gap-16 lg:absolute z-10 w-full lg:w-[67%]'>
-                        <div className='bg-white p-6  drop-shadow-[-10px_0px_50px_rgba(0,0,0,0.10)] flex flex-col lg:flex-row items-center justify-between gap-16 lg:absolute z-10 w-full lg:w-[67%]'>
-                            <h1>Coming Soon</h1>
-                        </div>
+                        <h1 className='text-center text-2xl'>Coming Soon</h1>
                     </div>}
                 </div>
 
