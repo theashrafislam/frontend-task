@@ -1,20 +1,7 @@
-// "use client"
-
-
-// import { useEffect, useState } from 'react';
+import data from '@/data/JsonDataLD.json';
 import Card from './Card';
 
 const PopularProperties = async () => {
-    // const [data, setData] = useState(null);
-
-    const response = await fetch('/data/JsonDataLD.json');
-    const data = await response.json();
-
-    // useEffect(() => {
-    //     fetch('/data/JsonDataLD.json')
-    //         .then((response) => response.json())
-    //         .then((json) => setData(json))
-    // }, [])
 
     if (!data) {
         return <p className='text-center text-2xl'>Loading...</p>
