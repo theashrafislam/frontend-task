@@ -8,7 +8,7 @@ const Subscribe = () => {
                 <p className='text-white text-center font-poppins mx-2 lg:mx-2 text-[16px] font-normal mb-[70px] opacity-70'>Here is a list of the greatest real estate company slogans of all-time. These <br /> catchy slogans are followed by the Greatest Real Estate.</p>
                 <div className='flex items-center justify-center'>
                     <div className='bg-white p-[7px] w-[95%] lg:w-[70%] flex items-center flex-col gap-3 lg:gap-0 lg:flex-row'>
-                        <input type="text" id="email" placeholder="Enter email address" class="p-4 w-full" name="email" />
+                        <input type="text" id="email" placeholder="Enter email address" className="p-4 w-full" name="email" />
                         <button className='py-4 px-10 text-white text-base bg-[#2E6EFF] rounded-[10px] w-full lg:w-min'>Subscribe</button>
                     </div>
                 </div>

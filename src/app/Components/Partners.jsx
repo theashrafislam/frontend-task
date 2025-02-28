@@ -1,19 +1,44 @@
-import Image from 'next/image';
-import React from 'react';
+
+"use client";
+
+import Image from "next/image";
+import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/autoplay";
 
 const Partners = () => {
-    return (
-        <div className='mt-24 mb-36'>
-            <h1 className='text-[#030A1B] text-[30px] lg:text-[44px] font-semibold text-center mb-16'>Our Partners</h1>
-            <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 place-items-center'>
-                <Image width={120} height={50} alt='Partner 1' src={'/images/1.png'} />
-                <Image width={120} height={50} alt='Partner 2' src={'/images/2.png'} />
-                <Image width={120} height={50} alt='Partner 3' src={'/images/3.png'} />
-                <Image width={120} height={50} alt='Partner 4' src={'/images/4.png'} />
-                <Image width={120} height={50} alt='Partner 5' src={'/images/5.png'} />
-            </div>
-        </div>
-    );
+  return (
+    <div className="mt-24 mb-36 mx-3 lg:mx-0">
+      <h1 className="text-[#030A1B] text-[30px] lg:text-[44px] font-semibold text-center mb-16">
+        Our Partners
+      </h1>
+      <Swiper
+        spaceBetween={20}
+        slidesPerView={2}
+        autoplay={{ delay: 2000, disableOnInteraction: false }}
+        breakpoints={{
+          640: { slidesPerView: 2 },
+          768: { slidesPerView: 3 }, 
+          1024: { slidesPerView: 5 },
+        }}
+        modules={[Autoplay]}
+        className="w-full"
+      >
+        {[1, 2, 3, 4, 5].map((num) => (
+          <SwiperSlide key={num} className="flex justify-center items-center">
+            <Image
+              width={100}
+              height={30}
+              alt={`Partner ${num}`}
+              src={`/images/${num}.png`}
+            />
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </div>
+  );
 };
 
 export default Partners;

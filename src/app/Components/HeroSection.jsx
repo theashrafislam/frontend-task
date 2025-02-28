@@ -49,197 +49,85 @@ const HeroSection = () => {
 
 
                     {/* buy filter */}
-                    {buy && <div className='bg-white p-6  drop-shadow-[-10px_0px_50px_rgba(0,0,0,0.10)] flex flex-col lg:flex-row items-center justify-between gap-16 lg:absolute z-10 w-full lg:w-[67%]'>
-                        {/* location  */}
-                        <div className='lg:border-r-2 pr-5 border-[#E6E7E9]'>
-                            <div className='flex items-center gap-1'>
-                                <label htmlFor="location" className="text-[#030A1B] text-[16px] font-normal leading-normal">
-                                    Location
-                                </label>
-                                <RiArrowDropDownLine className='text-2xl' />
+                    {buy && (
+                        <div className='bg-white p-6 drop-shadow-[-10px_0px_50px_rgba(0,0,0,0.10)] flex flex-col lg:flex-row items-center justify-between gap-6 lg:gap-16 lg:absolute z-10 w-full lg:w-[67%]'>
+                            {/* location */}
+                            <div className='w-full lg:w-auto lg:border-r-2 lg:pr-5 border-[#E6E7E9]'>
+                                <div className='flex items-center gap-1'>
+                                    <label htmlFor="location" className="text-[#030A1B] text-[16px] font-normal leading-normal">
+                                        Dhaka
+                                    </label>
+                                    <RiArrowDropDownLine className='text-2xl' />
+                                </div>
+                                <select
+                                    id="location"
+                                    name="location"
+                                    className="border-2 border-gray-300 appearance-none mt-1 block w-full pl-1 pr-10 py-2 text-base focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm rounded-md"
+                                >
+                                    <option value="Dhaka">Dhaka</option>
+                                    <option value="Chittagong">Dhaka 2</option>
+                                    <option value="Sylhet">Dhaka 3</option>
+                                    <option value="Rajshahi">Dhaka 4</option>
+                                    <option value="Khulna">Dhaka 5</option>
+                                </select>
                             </div>
-                            <select
-                                id="location"
-                                name="location"
-                                className="appearance-none mt-1 block w-full pl-1 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm rounded-md"
-                            >
-                                <option value="Dhaka">Dhaka</option>
-                                <option value="Chittagong">Chittagong</option>
-                                <option value="Sylhet">Sylhet</option>
-                                <option value="Rajshahi">Rajshahi</option>
-                                <option value="Khulna">Khulna</option>
-                            </select>
-                        </div>
 
-                        {/* Property type  */}
-                        <div className='pr-10 lg:border-r-2 border-[#E6E7E9]'>
-                            <div className='flex items-center gap-1'>
-                                <label htmlFor="Property-type" className="text-[#030A1B] text-[16px] font-normal text-nowrap leading-normal">
-                                    Property type
-                                </label>
-                                <RiArrowDropDownLine className='text-2xl' />
+                            {/* Property type */}
+                            <div className='w-full lg:w-auto lg:pr-10 lg:border-r-2 border-[#E6E7E9]'>
+                                <div className='flex items-center gap-1'>
+                                    <label htmlFor="Property-type" className="text-[#030A1B] text-[16px] font-normal text-nowrap leading-normal">
+                                        Property type
+                                    </label>
+                                    <RiArrowDropDownLine className='text-2xl' />
+                                </div>
+                                <select
+                                    id="Property-type"
+                                    name="location"
+                                    className="border-2 border-gray-300 appearance-none mt-1 block w-full pl-1 pr-10 py-2 text-base focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm rounded-md"
+                                >
+                                    <option value="Duplex">Duplex</option>
+                                    <option value="Duplex 2">Duplex 2</option>
+                                    <option value="Duplex 3">Duplex 3</option>
+                                    <option value="Duplex 4">Duplex 4</option>
+                                    <option value="Duplex 5">Duplex 5</option>
+                                </select>
                             </div>
-                            <select
-                                id="Property-type"
-                                name="Propertytype"
-                                className="appearance-none mt-1 block w-full pl-1 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm rounded-md"
-                            >
-                                <option value="Duplex">Duplex</option>
-                                <option value="Duplex 2">Duplex 2</option>
-                                <option value="Duplex 3">Duplex 3</option>
-                                <option value="Duplex 4">Duplex 4</option>
-                                <option value="Duplex 5">Duplex 5</option>
-                            </select>
-                        </div>
-                        {/* Price  */}
-                        <div>
-                            <div className='flex items-center gap-1'>
-                                <label htmlFor="price" className="text-[#030A1B] text-[16px] font-normal leading-normal">
-                                    Price
-                                </label>
-                                <RiArrowDropDownLine className='text-2xl' />
-                            </div>
-                            <select
-                                id="price"
-                                name="price"
-                                className="appearance-none mt-1 block w-full pl-1 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm rounded-md"
-                            >
-                                <option value="$4000 - $8000">$4000 - $6000</option>
-                                <option value="Chittagong">$6000 - $8000</option>
-                                <option value="Sylhet">$8000 - $10000</option>
-                            </select>
-                        </div>
 
-                        {/* search buttom  */}
-                        <button className='rounded-[10px] justify-center bg-[#2E6EFF] text-white text-[16px] font-medium leading-normal flex gap-1 items-center p-4'><CiSearch className='text-2xl font-bold' /><span>Search</span></button>
-                    </div>}
+                            {/* Price */}
+                            <div className='w-full lg:w-auto'>
+                                <div className='flex items-center gap-1'>
+                                    <label htmlFor="price" className="text-[#030A1B] text-[16px] font-normal leading-normal">
+                                        Price
+                                    </label>
+                                    <RiArrowDropDownLine className='text-2xl' />
+                                </div>
+                                <select
+                                    id="price"
+                                    name="price"
+                                    className="border-2 border-gray-300 appearance-none mt-1 block w-full pl-1 pr-10 py-2 text-base  focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm rounded-md"
+                                >
+                                    <option value="$4000 - $8000">$4000 - $6000</option>
+                                    <option value="Chittagong">$6000 - $8000</option>
+                                    <option value="Sylhet">$8000 - $10000</option>
+                                </select>
+                            </div>
+
+                            {/* search button */}
+                            <button className='w-full lg:w-auto rounded-[10px] justify-center bg-[#2E6EFF] text-white text-[16px] font-medium leading-normal flex gap-1 items-center p-4'>
+                                <CiSearch className='text-2xl font-bold' />
+                                <span>Search</span>
+                            </button>
+                        </div>
+                    )}
                     {rent && <div className='bg-white p-6  drop-shadow-[-10px_0px_50px_rgba(0,0,0,0.10)] flex flex-col lg:flex-row items-center justify-between gap-16 lg:absolute z-10 w-full lg:w-[67%]'>
-                        {/* location  */}
-                        <div className='lg:border-r-2 pr-5 border-[#E6E7E9]'>
-                            <div className='flex items-center gap-1'>
-                                <label htmlFor="location" className="text-[#030A1B] text-[16px] font-normal leading-normal">
-                                    Dhaka
-                                </label>
-                                <RiArrowDropDownLine className='text-2xl' />
-                            </div>
-                            <select
-                                id="location"
-                                name="location"
-                                className="appearance-none mt-1 block w-full pl-1 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm rounded-md"
-                            >
-                                <option value="Dhaka">Dhaka</option>
-                                <option value="Chittagong">Dhaka 2</option>
-                                <option value="Sylhet">Dhaka 3</option>
-                                <option value="Rajshahi">Dhaka 4</option>
-                                <option value="Khulna">Dhaka 5</option>
-                            </select>
+                        <div className='bg-white p-6  drop-shadow-[-10px_0px_50px_rgba(0,0,0,0.10)] flex flex-col lg:flex-row items-center justify-between gap-16 lg:absolute z-10 w-full lg:w-[67%]'>
+                            <h1>Coming Soon</h1>
                         </div>
-
-                        {/* Property type  */}
-                        <div className='pr-10 lg:border-r-2 border-[#E6E7E9]'>
-                            <div className='flex items-center gap-1'>
-                                <label htmlFor="Property-type" className="text-[#030A1B] text-[16px] font-normal text-nowrap leading-normal">
-                                    Property type
-                                </label>
-                                <RiArrowDropDownLine className='text-2xl' />
-                            </div>
-                            <select
-                                id="Property-type"
-                                name="location"
-                                className="appearance-none mt-1 block w-full pl-1 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm rounded-md"
-                            >
-                                <option value="Duplex">Duplex</option>
-                                <option value="Duplex 2">Duplex 2</option>
-                                <option value="Duplex 3">Duplex 3</option>
-                                <option value="Duplex 4">Duplex 4</option>
-                                <option value="Duplex 5">Duplex 5</option>
-                            </select>
-                        </div>
-                        {/* Price  */}
-                        <div>
-                            <div className='flex items-center gap-1'>
-                                <label htmlFor="price" className="text-[#030A1B] text-[16px] font-normal leading-normal">
-                                    Price
-                                </label>
-                                <RiArrowDropDownLine className='text-2xl' />
-                            </div>
-                            <select
-                                id="price"
-                                name="price"
-                                className="appearance-none mt-1 block w-full pl-1 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm rounded-md"
-                            >
-                                <option value="$4000 - $8000">$4000 - $6000</option>
-                                <option value="Chittagong">$6000 - $8000</option>
-                                <option value="Sylhet">$8000 - $10000</option>
-                            </select>
-                        </div>
-
-                        {/* search buttom  */}
-                        <button className='rounded-[10px] justify-center bg-[#2E6EFF] text-white text-[16px] font-medium leading-normal flex gap-1 items-center p-4'><CiSearch className='text-2xl font-bold' /><span>Search</span></button>
                     </div>}
                     {sell && <div className='bg-white p-6  drop-shadow-[-10px_0px_50px_rgba(0,0,0,0.10)] flex flex-col lg:flex-row items-center justify-between gap-16 lg:absolute z-10 w-full lg:w-[67%]'>
-                        {/* location  */}
-                        <div className='lg:border-r-2 pr-5 border-[#E6E7E9]'>
-                            <div className='flex items-center gap-1'>
-                                <label htmlFor="location" className="text-[#030A1B] text-[16px] font-normal leading-normal">
-                                    Location
-                                </label>
-                                <RiArrowDropDownLine className='text-2xl' />
-                            </div>
-                            <select
-                                id="location"
-                                name="location"
-                                className="appearance-none mt-1 block w-full pl-1 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm rounded-md"
-                            >
-                                <option value="Dhaka">Dhaka</option>
-                                <option value="Chittagong">Chittagong</option>
-                                <option value="Sylhet">Sylhet</option>
-                                <option value="Rajshahi">Rajshahi</option>
-                                <option value="Khulna">Khulna</option>
-                            </select>
+                        <div className='bg-white p-6  drop-shadow-[-10px_0px_50px_rgba(0,0,0,0.10)] flex flex-col lg:flex-row items-center justify-between gap-16 lg:absolute z-10 w-full lg:w-[67%]'>
+                            <h1>Coming Soon</h1>
                         </div>
-
-                        {/* Property type  */}
-                        <div className='pr-10 lg:border-r-2 border-[#E6E7E9]'>
-                            <div className='flex items-center gap-1'>
-                                <label htmlFor="Property-type" className="text-[#030A1B] text-[16px] font-normal text-nowrap leading-normal">
-                                    Property type
-                                </label>
-                                <RiArrowDropDownLine className='text-2xl' />
-                            </div>
-                            <select
-                                id="Property-type"
-                                name="Property-type"
-                                className="appearance-none mt-1 block w-full pl-1 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm rounded-md"
-                            >
-                                <option value="Duplex">Duplex</option>
-                                <option value="Duplex 2">Duplex 2</option>
-                                <option value="Duplex 3">Duplex 3</option>
-                                <option value="Duplex 4">Duplex 4</option>
-                                <option value="Duplex 5">Duplex 5</option>
-                            </select>
-                        </div>
-                        {/* Price  */}
-                        <div>
-                            <div className='flex items-center gap-1'>
-                                <label htmlFor="price" className="text-[#030A1B] text-[16px] font-normal leading-normal">
-                                    Price
-                                </label>
-                                <RiArrowDropDownLine className='text-2xl' />
-                            </div>
-                            <select
-                                id="price"
-                                name="Price"
-                                className="appearance-none mt-1 block w-full pl-1 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm rounded-md"
-                            >
-                                <option value="$4000 - $8000">$4000 - $6000</option>
-                                <option value="Chittagong">$6000 - $8000</option>
-                                <option value="Sylhet">$8000 - $10000</option>
-                            </select>
-                        </div>
-
-                        {/* search buttom  */}
-                        <button className='rounded-[10px] justify-center bg-[#2E6EFF] text-white text-[16px] font-medium leading-normal flex gap-1 items-center p-4'><CiSearch className='text-2xl font-bold' /><span>Search</span></button>
                     </div>}
                 </div>
 
