@@ -1,6 +1,7 @@
 import "./globals.css";
 import { Poppins } from "next/font/google";
 import Navbar from "./Components/Navbar";
+import Footer from "./Components/Footer";
 
 
 const poppins = Poppins({
@@ -28,13 +29,15 @@ export default function RootLayout({ children }) {
 
         {/* main section  */}
         <main
-          // className="max-w-7xl mx-auto"
+        // className="max-w-7xl mx-auto"
         >
           {children}
         </main>
 
         {/* footer section  */}
-
+        <footer className="max-w-7xl mx-auto">
+          <Footer />
+        </footer>
 
       </body>
     </html>
